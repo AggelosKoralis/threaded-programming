@@ -9,7 +9,7 @@ run () {
     do
         echo "Running ./main $degree1 $degree2 $threads"
         
-        ./ask1_1 $degree1 $degree2 $threads
+        ./main $degree1 $degree2 $threads
         if [ $(echo $?) != 0 ]
         then
             echo "Error: main failed"
